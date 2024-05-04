@@ -5,6 +5,10 @@ pipeline {
     }
     stages {
         stage('Build') {
+
+            environment{
+                registryCredential='saurabhprakash1890559'
+            }
             steps {
                 script {
                     // Build and push Docker image
