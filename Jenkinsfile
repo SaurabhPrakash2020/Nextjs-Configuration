@@ -37,7 +37,7 @@ pipeline {
             } else {
                 echo 'Service, Deployment, and Ingress configurations are unchanged, skipping deployment'
             }
-                    sh 'npm run dev'
+                
         }
             }
         }
