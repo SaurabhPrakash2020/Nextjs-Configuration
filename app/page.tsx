@@ -70,7 +70,7 @@ export default function Home() {
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            This is a template now create  your app and let me configure that  you are working fine or not
+            Learn about Next.js in an interactive course with&nbsp;quizzes!
           </p>
         </a>
 
