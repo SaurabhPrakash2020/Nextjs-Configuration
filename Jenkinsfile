@@ -7,12 +7,13 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    // Build and push Docker image
-                    docker.withRegistry('https://index.docker.io/v1/', 'saurabhprakash1890559') {
-                        def customImage = docker.build('saurabhprakash1890559/my-nextjs-app:v1')
-                        customImage.push('saurabhprakash1890559/my-nextjs-app:v1')
-                    }
-                }
+    // Build and push Docker image
+    docker.withRegistry('https://index.docker.io/v1/', 'saurabhprakash1890559') {
+        def customImage = docker.build('saurabhprakash1890559/my-nextjs-app:v1')
+        customImage.push()
+    }
+}
+
             }
         }
         stage('Deploy') {
